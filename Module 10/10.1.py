@@ -1,0 +1,24 @@
+class Elevator:
+    def __init__(self,bottom, top):
+        self.bottom = bottom
+        self.top = top
+        self.current_floor = bottom
+    def go_to_floor(self,target_floor):
+        if target_floor > self.top or target_floor < self.bottom:
+            print("Invalid floor.")
+            return
+        while self.current_floor < target_floor:
+            self.floor_up()
+        while self.current_floor > target_floor:
+            self.floor_down()
+    def floor_up(self):
+        if self.current_floor < self.top:
+            self.current_floor +=1
+            print(f"Currently at floor {self.current_floor}.")
+    def floor_down(self):
+        if self.current_floor > self.bottom:
+            self.current_floor -= 1
+            print(f"Currently at floor {self.current_floor}.")
+elevator=Elevator(1,10)
+elevator.go_to_floor(11)
+elevator.go_to_floor(1)
