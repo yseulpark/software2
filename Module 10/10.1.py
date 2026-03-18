@@ -20,5 +20,5 @@ class Elevator:
             self.current_floor -= 1
             print(f"Currently at floor {self.current_floor}.")
 elevator=Elevator(1,10)
-elevator.go_to_floor(11)
+elevator.go_to_floor(9)
 elevator.go_to_floor(1)
