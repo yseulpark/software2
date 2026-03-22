@@ -46,5 +46,3 @@ building = Building(1,20,4)
 building.run_elevator(3,16)
 building.fire_alarm()
 
-
-
