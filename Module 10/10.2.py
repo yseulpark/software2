@@ -36,7 +36,7 @@ class Building:
         elevator = self.elevators[num_elevator-1]
         elevator.go_to_floor(target_floor)
 
-building = Building(1,20,4)
+building = Building(1,18,4)
 building.run_elevator(3,16)
 
 
